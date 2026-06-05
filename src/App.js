@@ -192,7 +192,7 @@ export default function App() {
       {stage === "TRAIN" && queue.length > 0 && (
         <div className="max-w-sm mx-auto space-y-6">
           <div className="flex justify-between bg-gray-900 p-4 border border-gray-800 rounded-2xl text-xs">
-            <span>緊接著是: {queue[1]?.name || "FINISH"}</span>
+            <span>還沒結束，下一個是: {queue[1]?.name || "FINISH"}</span>
             <span className="text-red-500 font-bold">
               訓練時間: {Math.floor(seconds / 60)}:
               {String(seconds % 60).padStart(2, "0")}
